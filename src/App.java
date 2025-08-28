@@ -10,7 +10,7 @@ public class App {
         String director = scanner.nextLine();
         System.out.print("Enter year: ");
         int year = scanner.nextInt();
-        scanner.nextLine(); // Clear buffer
+        scanner.nextLine(); 
         System.out.print("Enter genre: ");
         String genre = scanner.nextLine();
         System.out.print("Enter synopsis: ");
