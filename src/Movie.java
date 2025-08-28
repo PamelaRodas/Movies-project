@@ -5,7 +5,6 @@ public class Movie {
     private String genre;
     private String synopsis;
 
-   
     public Movie(String name, String director, int year, String genre, String synopsis) {
         this.name = name;
         this.director = director;
@@ -14,21 +13,20 @@ public class Movie {
         this.synopsis = synopsis;
     }
 
-   
     public void displayInfo() {
-        System.out.println("Name: " + name);
+        System.out.println("Movie Name: " + name);
         System.out.println("Director: " + director);
         System.out.println("Year: " + year);
         System.out.println("Genre: " + genre);
         System.out.println("Synopsis: " + synopsis);
     }
 
-
     public void waitSeconds(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
-            System.out.println("Interrupted.");
+            System.out.println("Interrupted!");
         }
     }
 }
+
